@@ -27,11 +27,11 @@
   50% {
     -moz-transform: rotateY(-180deg) rotateZ(90deg);
     -ms-transform: rotateY(-180deg) rotateZ(90deg);
-    transform: rotateY(-180deg) rotateZ(90deg); }
+    transform: rotateY(-180deg) rotateZ(450deg); }
   66% {
     -moz-transform: rotateY(-270deg) rotateX(90deg);
     -ms-transform: rotateY(-270deg) rotateX(90deg);
-    transform: rotateY(-270deg) rotateX(90deg); }
+    transform: rotateY(180deg) rotateX(360deg); }
   83% {
     -moz-transform: rotateX(90deg);
     -ms-transform: rotateX(90deg);

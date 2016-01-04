@@ -2,12 +2,22 @@ html, body, p, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, iframe{
   margin: 0;
   padding: 0;
 }
-
-body {
-  background: url(images/wood2.jpg) fixed;
-  background-size: 100% 100%;
+html {
   width: 100%;
   height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.page-wrap {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/wood2.jpg);
+  background-size: 100% 100%;
 }
 h1 {
   text-align: center;
@@ -21,6 +31,7 @@ h1 {
   }
 }
 button {
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,7 +40,7 @@ button {
   height: 100px;
   border-radius: 50px;
   background: #06f;
-  box-shadow: inset 0 0 7px 3px #000;
+  box-shadow: inset 0 0 5px 2px #000;
   border: none;
   font-size: 50px;
   color: #eee;
@@ -41,6 +52,7 @@ button {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
+  &:focus {outline:0;}
 }
 
 
@@ -129,6 +141,32 @@ button {
     -ms-transform-origin: 100px 100px 0;
     transform-origin: 100px 100px 0;
   }
+  @keyframes fadeSlow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-slow {
+    animation-name: fadeSlow;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+  @keyframes fadeFast {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-fast {
+    animation-name: fadeFast;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
 
   .stage {
     position: absolute;
@@ -141,6 +179,7 @@ button {
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.8);
+    opacity: 0;
   }
   .shade {
     width: 100px;

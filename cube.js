@@ -8,6 +8,7 @@ $(window).load(function(){
 $(document).ready(function(){
 	$('button').on('click',function(){
 		$('button').addClass('button-out');
-		$('.cubespinner div').addClass('start-dice');
+		$('.wrap div').addClass('start-dice');
+		setTimeout(function(){$('.wrap').addClass('roll-dice');},0);
 	});
 });

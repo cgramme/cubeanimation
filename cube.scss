@@ -203,8 +203,14 @@ button {
     20% {
       opacity: 1;
     }
-    100% {
+    40% {
       transform: rotateY(1100deg) rotateZ(1000deg);
+    }
+    50% {
+      transform: rotateY(1100deg) rotateZ(1000deg);
+    }
+    100% {
+      transform: rotateY(0deg) rotateZ(0deg);
     }
   }
 
@@ -212,7 +218,7 @@ button {
     animation-name: rollDice;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 10s;
      animation-fill-mode: forwards;
 
     -webkit-transform-style: preserve-3d;

@@ -8,9 +8,11 @@ $(window).load(function(){
 $(document).ready(function(){
 		$('button').on('click',function(){
 		$('button').addClass('button-out');
-		$('.wrap div').addClass('start-dice');
-		$('.stage').addClass('fade-out');
-		setTimeout(function(){$('.wrap').addClass('roll-dice');$('.stage').removeClass('fade-out').addClass('start-dice');},1000);
-		setTimeout(function(){$('.wrap').removeClass('fade-out').addClass('start-dice');   $('.stage').removeClass('fade-out').addClass('start-dice');},7000);
+		//$('.wrap div').addClass('start-dice');
+		$('#stage div').css({"opacity":"0","transition":"1s"});
+
+		setTimeout(function(){$('.wrap').addClass('roll-dice');$('#stage div').css({"opacity":"1","transition":"1s"});},800);
+		setTimeout(function(){$('#stage div').css({"opacity":"0","transition":"2s"});},5200);
+		setTimeout(function(){$('.wrap').removeClass('roll-dice').addClass('cubespinner');$('#stage div').css({"opacity":"0.8","transition":"1s"});$('button').removeClass('button-out').addClass('button-in');},7000);
 	});
 });

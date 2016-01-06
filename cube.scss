@@ -149,10 +149,29 @@ button {
       color: #000;
     }
   }
+  @keyframes rollShadowS {
+    0% {
+    }
+    50% {
+      text-shadow: 0 0 30px #fff;
+      color: #fff;
+      border: 1px solid #222;
+    }
+    100% {
+      text-shadow: 0 0 1px #fff;
+      color: #000;
+      border: 2px solid #fff;
+    }
+  }
   .roll-shadow {
     animation-name: rollShadow;
     animation-fill-mode: forwards;
     animation-duration: 4s;
+    @media screen and (max-width: 800px) {
+      animation-name: rollShadowS;
+      animation-fill-mode: forwards;
+      animation-duration: 4s;
+    };
   }
   @keyframes textShadow {
     0% {

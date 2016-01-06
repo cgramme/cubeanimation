@@ -153,9 +153,8 @@ button {
     0% {
     }
     50% {
-      text-shadow: 0 0 30px #fff;
+      text-shadow: 0 0 20px #fff;
       color: #fff;
-      border: 1px solid #222;
     }
     100% {
       text-shadow: 0 0 1px #fff;
@@ -221,7 +220,7 @@ button {
       left: -200px;
       transform: scale(0.2);
     }
-    95% {
+    90% {
       transform: scale(0.2);
       left: 50%;
     }

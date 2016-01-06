@@ -23,8 +23,8 @@ $(document).ready(function(){
 		setTimeout(function(){$('.wrap').removeClass('roll'+number).addClass('cubespinner');$('#stage div').css({"opacity":"0.8","transition":"1s"});
 			$('button').removeClass('button-out').addClass('button-in');
 			$('.wrap div').removeClass('roll-shadow');
-			randomHighlight();
 		},7000);
+		setTimeout(function(){randomHighlight();},9000);
 	});
 });
 
@@ -32,7 +32,7 @@ function randomHighlight(){
 	//var number =".face" + (1 + Math.floor(Math.random() * 6));
 	textLoop = setInterval(function(){
 		var number =".face" + (1 + Math.floor(Math.random() * 6));
-		$(number).addClass('text-shadow').delay(4000).queue(function(next){
+		$(number).addClass('text-shadow').delay(4500).queue(function(next){
                 $(this).removeClass('text-shadow');
                 next();
         });

@@ -219,8 +219,14 @@ button {
   @keyframes buttonIn {
     0% {
       left: -200px;
+      transform: scale(0.2);
+    }
+    90% {
+      transform: scale(0.2);
+      left: 50%;
     }
     100% {
+      transform: scale(1);
       left: 50%;
     }
   }
@@ -232,8 +238,14 @@ button {
   @keyframes buttonOut {
     0% {
       left: 50%;
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.2);
+      left: 50%;
     }
     100% {
+      transform: scale(0.2);
       left: -1000px;
     }
   }

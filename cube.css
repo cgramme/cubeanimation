@@ -53,6 +53,10 @@ button {
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
+  @media screen and (max-width: 800px) {
+    button:hover {
+      background: #06f;
+      cursor: pointer; } }
   button:focus {
     outline: 0; }
 

@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$('.wrap div').removeClass('text-shadow');
 		$('button').addClass('button-out');
 		$('.wrap div').addClass('start-dice');
-		//$('#stage div').css({"opacity":"0","transition":"1s"});
+		$('#stage div').css({"opacity":"0","transition":"1s"});
 		var number = 1 + Math.floor(Math.random() * 6);
 		setTimeout(function(){
 			$('.wrap').addClass('roll'+number);

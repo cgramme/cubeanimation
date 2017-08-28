@@ -30,7 +30,8 @@ $(document).ready(function(){
 			$('button').removeClass('button-out').addClass('button-in');
 			$('.wrap div').removeClass('roll-shadow');
 		},7000);
-		//setTimeout(function(){randomHighlight();},9000);
+		//setTimeout(function(){randomHighlight();
+		},9000);
 	});
 });
 

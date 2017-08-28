@@ -6,7 +6,7 @@ $(window).on('load',function(){
 	setTimeout(function(){$('.stage').addClass('fade-fast');},500);
 	setTimeout(function(){$('button').addClass('button-in');},1000);
 
-	randomHighlight();
+	//randomHighlight();
 });
 
 $(document).ready(function(){

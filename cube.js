@@ -34,7 +34,9 @@ $(document).ready(function(){
 			$('button').removeClass('button-out').addClass('button-in');
 			$('.wrap div').removeClass('roll-shadow');
 		},7000);
-		setTimeout(function(){randomHighlight();},9000);
+		setTimeout(function(){
+			randomHighlight();
+		},9000);
 	});
 });
 
@@ -43,8 +45,8 @@ function randomHighlight(){
 	textLoop = setInterval(function(){
 		var number =".face" + (1 + Math.floor(Math.random() * 6));
 		$(number).addClass('text-shadow').delay(4500).queue(function(next){
-                $(this).removeClass('text-shadow');
-                next();
-        });
+                	$(this).removeClass('text-shadow');
+			next();
+        	});
 	},300);
 }

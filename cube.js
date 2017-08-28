@@ -1,7 +1,7 @@
 
 var textLoop;
 
-$(window).load(function(){
+$(window).on('load',function(){
 	$('.page-wrap').addClass('fade-slow');
 	setTimeout(function(){$('.stage').addClass('fade-fast');},500);
 	setTimeout(function(){$('button').addClass('button-in');},1000);

@@ -21,7 +21,7 @@ $(document).ready(function(){
 			$('.wrap').addClass('roll'+number);
 			//$('#stage div').css({"opacity":"1","transition":"2s"});},800);
 			setTimeout(function(){$('.wrap div').addClass('roll-shadow');},3000);
-			setTimeout(function(){$('button').unbind('mouseenter mouseleave :hover');
+			//setTimeout(function(){$('button').unbind('mouseenter mouseleave :hover');
 			//$('#stage div').css({"opacity":"0","transition":"2s"});
 		},5200);
 		setTimeout(function(){
@@ -30,8 +30,7 @@ $(document).ready(function(){
 			$('button').removeClass('button-out').addClass('button-in');
 			$('.wrap div').removeClass('roll-shadow');
 		},7000);
-		//setTimeout(function(){randomHighlight();
-		},9000);
+		setTimeout(function(){randomHighlight();},9000);
 	});
 });
 
